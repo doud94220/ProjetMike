@@ -9,6 +9,7 @@ $(function()
 	 
 	request.done(function(jsonData)
 	{
+		console.log('dans le done');
 		jsonData = JSON.parse(jsonData);
 		content = "";
 
@@ -20,8 +21,9 @@ $(function()
 			content += "<li>" + modeleAjaxElmt + " " + marqueAjaxElmt + "</li>";
 		});
 
+		console.log('toto');
 		//Ecriture du content dans la page html
-		$("#right_columnl").find("ul").html(content);
+		$("#right_column").find('ul').html(content);
 	});
 
 	request.fail(function(jqXHR, textStatus)
