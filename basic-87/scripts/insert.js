@@ -5,7 +5,7 @@ $(function(){
 
 			e.preventDefault();
 			$.ajax({
-				url: "http://localhost/ProjetMike/scripts/insert.php",
+				url: "http://localhost/J50-ProjetGitHub/ProjetMike/basic-87/scripts/insert.php",
 				method: "POST",
 				data: $("form").serialize()
 			})
